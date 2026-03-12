@@ -1,0 +1,139 @@
+{
+  "chapter_id": 5,
+  "consistency_score": 0.92,
+  "flow_score": 0.95,
+  "issues": [
+    {
+      "session": "5.1",
+      "type": "content_truncation",
+      "description": "Session 5.1 content is truncated mid-sentence at 'Explore 탭' description, missing coverage of Create tab, Organize tab, Imagine Bar details, 4장 그리드, U/V buttons, Vary Region, Draft Mode",
+      "fix": "Ensure full content is generated covering all defined concepts listed in the session metadata"
+    },
+    {
+      "session": "5.2",
+      "type": "content_truncation",
+      "description": "Session 5.2 truncated mid-sentence at '비율을 **처음부터 새롭게 설계'. Missing coverage of 용도별 최적 종횡비 표, 비표준 비율 활용법, 멀티 매체 워크플로우",
+      "fix": "Complete all sections including practical ratio tables and multi-media workflow"
+    },
+    {
+      "session": "5.3",
+      "type": "content_truncation",
+      "description": "Session 5.3 truncated at mermaid diagram mid-flow. Missing coverage of 값별 결과 비교, --style raw, 용도별 최적값, 파라미터 조합 시너지",
+      "fix": "Complete the full session including comparison tables and combination strategies"
+    },
+    {
+      "session": "5.4",
+      "type": "content_truncation",
+      "description": "Session 5.4 truncated at '기본값이 0이라는 점이'. Missing Chaos Bracketing, 깔때기 전략 details, --stylize+--chaos 조합 매트릭스",
+      "fix": "Complete all sections including the combination matrix and practical exercises"
+    },
+    {
+      "session": "5.5",
+      "type": "content_truncation",
+      "description": "Session 5.5 truncated at '프롬프트의 주제와 강하게 연결된'. Missing 네거티브 키워드 전략, 플랫폼별 비교, 멀티 프롬프트 가중치 고급 기법",
+      "fix": "Complete remaining concepts and practical exercises"
+    },
+    {
+      "session": "5.6",
+      "type": "content_truncation",
+      "description": "Session 5.6 truncated at '4대 파라미'. Missing --seed, --repeat, --weird coverage, Remix 모드 실습, 반복 워크플로우 설계",
+      "fix": "Complete all sections including the full iterative workflow and chapter summary exercises"
+    },
+    {
+      "session": "5.3",
+      "type": "terminology",
+      "description": "--stylize 기본값이 100으로 명시되어 있으나, Midjourney V6+에서는 기본값이 100이 맞는지 확인 필요. V7에서 변경되었을 수 있음",
+      "fix": "Midjourney 공식 문서 기준으로 현재 버전의 기본값 확인 후 정확한 값 명시"
+    },
+    {
+      "session": "5.4",
+      "type": "terminology",
+      "description": "--chaos 기본값을 0으로 명시했으나, Midjourney 공식 문서에서는 기본값이 0인지 확인 필요 (일부 버전에서는 다를 수 있음)",
+      "fix": "공식 Parameter List 문서 참조하여 정확한 기본값 확인"
+    },
+    {
+      "session": "5.2",
+      "type": "terminology",
+      "description": "--ar 지원 범위를 '1:2~2:1'로 명시했으나, Midjourney V6+/V7에서는 더 넓은 범위 지원 가능. 공식 문서 확인 필요",
+      "fix": "최신 Midjourney 공식 Aspect Ratio 문서 참조하여 정확한 범위 명시"
+    },
+    {
+      "session": "5.5",
+      "type": "cross_reference",
+      "description": "플랫폼별 네거티브 프롬프트 비교에서 Stable Diffusion 언급이 있으나, Ch3(ChatGPT)·Ch4(Gemini)에서 네거티브 프롬프트를 다뤘는지 일관성 확인 필요",
+      "fix": "Ch3/Ch4에서 네거티브 프롬프트 관련 내용이 있으면 상호 링크, 없으면 이 섹션에서 간단히 비교하되 과도한 타 플랫폼 설명 자제"
+    }
+  ],
+  "hyperlinks": [
+    {
+      "from_session": "5.1",
+      "to_session": "1.2",
+      "anchor_text": "주요 플랫폼 비교에서 살펴본 Midjourney의 특징",
+      "context": "Already present - links to Ch1 Session 2 for platform comparison context"
+    },
+    {
+      "from_session": "5.1",
+      "to_session": "2.1",
+      "anchor_text": "프롬프트 해부학 — 6요소 프레임워크",
+      "context": "Already present - links to Ch2 Session 1 for prompt fundamentals"
+    },
+    {
+      "from_session": "5.3",
+      "to_session": "2.1",
+      "anchor_text": "프롬프트 해부학: 6요소 프레임워크",
+      "context": "Already present - explains that prompt quality and stylize interact"
+    },
+    {
+      "from_session": "5.4",
+      "to_session": "5.3",
+      "anchor_text": "--stylize 파라미터의 개념",
+      "context": "Already present - chaos builds on stylize understanding"
+    },
+    {
+      "from_session": "5.5",
+      "to_session": "3.3",
+      "anchor_text": "ChatGPT에서의 네거티브 지시",
+      "context": "Ch3에서 ChatGPT 프롬프트 작성 시 제외 요소 지정법을 다뤘다면 링크 추가. 플랫폼별 비교 맥락에서 유용"
+    },
+    {
+      "from_session": "5.5",
+      "to_session": "4.2",
+      "anchor_text": "Gemini에서의 네거티브 지시",
+      "context": "Ch4에서 Gemini 프롬프트 제외 지시를 다뤘다면 링크 추가. 플랫폼별 비교 맥락"
+    },
+    {
+      "from_session": "5.6",
+      "to_session": "6.1",
+      "anchor_text": "img2img, 인페인팅, 아웃페인팅",
+      "context": "Next chapter preview already mentioned in session summary. Forward link to Ch6 intro"
+    },
+    {
+      "from_session": "5.6",
+      "to_session": "8.3",
+      "anchor_text": "캐릭터 일관성 유지를 위한 시드 활용",
+      "context": "--seed 개념이 Ch8 캐릭터 일관성 유지와 직결됨. Forward reference로 동기 부여"
+    },
+    {
+      "from_session": "5.4",
+      "to_session": "2.3",
+      "anchor_text": "프롬프트 반복과 변형 전략",
+      "context": "깔때기 전략이 Ch2의 프롬프트 반복/정제 개념과 연결된다면 상호 링크"
+    }
+  ],
+  "new_glossary_terms": {
+    "Imagine Bar": "Midjourney 웹 인터페이스의 프롬프트 입력창. Create 탭에서 텍스트를 입력하여 이미지 생성을 시작하는 핵심 UI 요소",
+    "4장 그리드": "Midjourney가 하나의 프롬프트에 대해 생성하는 4개의 이미지 후보를 2x2 격자로 배열한 결과물",
+    "Draft Mode": "Midjourney에서 빠른 속도로 저해상도 이미지를 생성하여 프롬프트 실험을 효율적으로 수행하는 모드",
+    "Vary Region": "Midjourney에서 Upscale된 이미지의 특정 영역만 선택하여 새롭게 생성하는 부분 재생성 기능",
+    "Re-roll": "Midjourney에서 동일한 프롬프트와 파라미터로 새로운 4장 그리드를 다시 생성하는 기능",
+    "점진적 빌딩(Incremental Building)": "Remix 모드를 활용하여 프롬프트를 조금씩 수정하며 이미지를 단계적으로 발전시키는 워크플로우 기법",
+    "깔때기 전략": "높은 chaos 값에서 시작하여 점진적으로 낮추면서 아이디어 탐색→방향 확정→정밀 조정으로 이어지는 체계적 이미지 생성 전략",
+    "Chaos Bracketing": "동일 프롬프트에 다양한 chaos 값을 적용하여 결과를 비교하는 기법. 최적의 다양성 수준을 찾는 데 활용",
+    "--style raw": "Midjourney의 기본 미학적 처리를 최소화하여 프롬프트에 가장 충실한 결과를 생성하는 스타일 모드",
+    "--weird(--w)": "Midjourney에서 결과물에 비전통적이고 실험적인 미학을 적용하는 파라미터",
+    "--repeat(--r)": "Midjourney에서 동일한 프롬프트를 지정 횟수만큼 자동 반복 생성하는 파라미터",
+    "파라미터 프리셋": "자주 사용하는 파라미터 조합을 용도별로 미리 정의해둔 템플릿 (예: 소셜 미디어용, 컨셉 탐색용 등)",
+    "멀티 프롬프트 가중치(::)": "Midjourney에서 프롬프트를 ::로 구분하여 각 부분에 서로 다른 가중치를 부여하는 고급 프롬프트 기법"
+  },
+  "summary": "Ch5는 Midjourney 파라미터를 체계적으로 학습하는 매우 잘 설계된 챕터입니다. 인터페이스 기초(5.1) → 구도 제어(5.2) → 미학 제어(5.3) → 다양성 제어(5.4) → 제거 제어(5.5) → 통합 조합(5.6)으로 이어지는 난이도 곡선이 자연스럽고, 각 세션의 '왜 알아야 할까' 섹션이 실무 동기 부여를 잘 제공합니다. 비유(액자, 감독, 커피숍, 오케스트라)가 일관되게 비코딩 타깃에 맞춰져 있어 좋습니다. 주요 문제점은 모든 세션이 중간에 잘려 있어 완성도 확인이 불가능하다는 점이며, --ar 범위(1:2~2:1), --stylize 기본값(100), --chaos 기본값(0) 등 파라미터 스펙이 최신 Midjourney 버전(V7/Niji 7)과 일치하는지 공식 문서 교차 검증이 필요합니다. 용어 사용은 챕터 내에서 일관적이며, 이전 챕터(Ch1, Ch2)로의 역참조도 적절합니다."
+}

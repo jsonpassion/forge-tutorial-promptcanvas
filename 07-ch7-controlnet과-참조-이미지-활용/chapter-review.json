@@ -1,0 +1,107 @@
+{
+  "chapter_id": 7,
+  "consistency_score": 0.88,
+  "flow_score": 0.82,
+  "issues": [
+    {
+      "session": "7.1",
+      "type": "terminology",
+      "description": "세션 요약에서 '2023년 스탠포드의 Lvmin Zhang'이라고 했으나, Lvmin Zhang은 스탠포드가 아닌 UC San Diego 소속",
+      "fix": "정확한 소속 확인 후 수정 (Stanford → UC San Diego 또는 정확한 기관명)"
+    },
+    {
+      "session": "7.1",
+      "type": "typo",
+      "description": "'스스로 결정합니다' → '스스로'는 오타",
+      "fix": "'스스로' → '스스로' 가 아닌 '스스로'... 원문 확인 필요. '스스로' → '스스로' (맞춤법: 스스로)"
+    },
+    {
+      "session": "7.1",
+      "type": "content",
+      "description": "'2025년 벤치마크에 따르면 22% vs 94.2%' — 출처가 명시되지 않은 구체적 수치. 검증 불가능한 통계는 신뢰도를 떨어뜨림",
+      "fix": "출처를 명시하거나, '프롬프트만으로는 구조적 정확도가 크게 떨어지는 반면, ControlNet을 사용하면 극적으로 향상됩니다' 정도로 완화"
+    },
+    {
+      "session": "7.4",
+      "type": "flow",
+      "description": "7.1~7.3은 ControlNet(Stable Diffusion 생태계) 중심, 7.4~7.5는 Midjourney 파라미터로 급전환. 전환 브릿지가 개요 첫 문단뿐이라 독자에게 맥락 단절감 발생 가능",
+      "fix": "7.4 도입부에 'ControlNet은 Stable Diffusion 생태계의 구조 제어 도구였다면, Midjourney는 자체 파라미터로 유사한 참조 기반 제어를 제공합니다. 접근 방식은 다르지만 목적은 동일합니다' 식의 브릿지 단락 강화"
+    },
+    {
+      "session": "7.4",
+      "type": "terminology",
+      "description": "'주제 누출 (Subject Leakage)'이 7.4 Defines에 있으나 7.5에서도 '주제 누출 방지'로 다시 등장. 정의 위치가 7.4인지 7.5인지 불명확",
+      "fix": "7.4에서 정의하고 7.5에서는 '앞서 배운 주제 누출' 형태로 참조 링크 추가"
+    },
+    {
+      "session": "7.5",
+      "type": "content",
+      "description": "7.5 콘텐츠가 요약본만 제공되어 전체 내용 검증 불가. 실제 본문 텍스트 없이 리뷰 정확도 제한",
+      "fix": "전체 콘텐츠 확인 필요"
+    },
+    {
+      "session": "7.3",
+      "type": "terminology",
+      "description": "OpenPose 전처리기 4종을 '(body, hand, face, full)'로 설명하면서 실제 정의에서는 'openpose, openpose_hand, openpose_face, openpose_full'로 표기. 본문에서는 'body'라 하고 정의에서는 'openpose'로 불일치",
+      "fix": "본문에서도 'openpose(기본 body), openpose_hand, openpose_face, openpose_full'로 통일"
+    },
+    {
+      "session": "7.2",
+      "type": "content",
+      "description": "Defines에 LeReS, Zoe Depth가 포함되어 있으나 학습 목표와 개요에서는 'MiDaS, Depth Anything'만 언급. 정의만 있고 본문 설명이 부족할 가능성",
+      "fix": "LeReS, Zoe Depth도 비교표에 포함하거나, Defines에서 제거"
+    },
+    {
+      "session": "7.4",
+      "type": "accuracy",
+      "description": "--sv (Style Version) 설명에서 '--sv 6'이라 했으나, Midjourney V7 기준 --sv는 공식 문서에서 제한적으로 언급됨. 정확한 파라미터 지원 여부 확인 필요",
+      "fix": "Midjourney 공식 문서 재확인 후 V7에서 --sv 지원 여부 명시"
+    }
+  ],
+  "hyperlinks": [
+    {
+      "from_session": "7.2",
+      "to_session": "6.1",
+      "anchor_text": "img2img의 Denoising Strength",
+      "context": "'Denoising Strength를 높이면 구도가 무너지고' 부분에서 Ch6 img2img 원리 세션으로 링크"
+    },
+    {
+      "from_session": "7.3",
+      "to_session": "7.2",
+      "anchor_text": "Canny는 윤곽선을, Depth는 깊이감을 제어",
+      "context": "'앞서 배운 Canny는 윤곽선을, Depth는 깊이감을 제어했죠' 부분에 7.2 링크 추가"
+    },
+    {
+      "from_session": "7.4",
+      "to_session": "5.3",
+      "anchor_text": "--stylize 파라미터",
+      "context": "'--stylize가 미학적 해석 강도를 조절하는 볼륨 노브' 비교 부분에서 Ch5 세션 링크"
+    },
+    {
+      "from_session": "7.5",
+      "to_session": "7.4",
+      "anchor_text": "--sref 스타일 레퍼런스",
+      "context": "--sref+--cref 조합 설명 시 7.4 참조 링크"
+    },
+    {
+      "from_session": "7.4",
+      "to_session": "8.3",
+      "anchor_text": "브랜드 스타일 가이드 구축",
+      "context": "이미 포함됨 — 적절한 전방 참조"
+    },
+    {
+      "from_session": "7.3",
+      "to_session": "11.3",
+      "anchor_text": "감정 표현과 인물 포즈",
+      "context": "OpenPose face 전처리기로 표정 제어 언급 시, Ch11 시각적 스토리텔링 챕터로 전방 참조 가능"
+    }
+  ],
+  "new_glossary_terms": {
+    "히스테리시스 임계처리 (Hysteresis Thresholding)": "Canny Edge Detection에서 두 개의 임계값(Low/High)을 사용하여 강한 엣지와 약한 엣지를 구분하고, 강한 엣지에 연결된 약한 엣지만 보존하는 기법",
+    "PAF (Part Affinity Fields)": "OpenPose에서 검출된 키포인트들이 어떤 사람에게 속하는지를 판별하기 위해 사용하는 2D 벡터 필드. 다인물 포즈 추정의 핵심 기술",
+    "DWPose": "OpenPose의 대안 포즈 추정 모델로, 더 정확한 키포인트 검출과 가려진 관절 추정 성능을 제공하는 전처리기",
+    "--oref (Omni Reference)": "Midjourney V7에서 --cref를 대체하는 범용 참조 파라미터. 캐릭터, 스타일, 오브젝트 등 다양한 참조를 하나의 파라미터로 통합",
+    "--ow (Omni Weight)": "Midjourney V7에서 --oref의 영향력을 0~1000 범위로 조절하는 가중치 파라미터"
+  },
+  "summary": "Ch7은 ControlNet 구조 제어(7.1~7.3)에서 Midjourney 스타일/캐릭터 제어(7.4~7.5)로 전환하는 구성으로, '참조 이미지 활용'이라는 주제를 두 생태계에 걸쳐 폭넓게 다룹니다. 강점은 각 세션의 비유가 직관적이고(트레이싱지, 막대 인간, 레시피 카드), 실습 워크플로우가 단계별로 잘 구성되어 있다는 점입니다. 약점은 (1) 7.3→7.4 전환에서 ControlNet→Midjourney 맥락 전환이 다소 급격하고, (2) 일부 통계 수치의 출처가 불명확하며, (3) 전처리기 명칭 표기가 본문과 정의 간 불일치하는 부분이 있습니다. 난이도 곡선은 적절하나, 7.1~7.3이 Stable Diffusion/ComfyUI 환경 전제인 반면 대상 독자가 '코딩 경험 없는 디자이너'라는 점에서 실제 도구 접근성에 대한 보충 설명(어떤 UI에서 이를 사용하는지)이 필요할 수 있습니다."
+}

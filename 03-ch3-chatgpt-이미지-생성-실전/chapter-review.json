@@ -1,0 +1,108 @@
+{
+  "chapter_id": 3,
+  "consistency_score": 0.85,
+  "flow_score": 0.9,
+  "issues": [
+    {
+      "session": "3.1",
+      "type": "content_truncation",
+      "description": "Session 3.1 content is truncated mid-sentence in the Mermaid diagram section — the style block for 'after' is incomplete (`style after fill`), and the rest of the session content is missing.",
+      "fix": "Complete the Mermaid diagram style definition and ensure the full session content is present."
+    },
+    {
+      "session": "3.3",
+      "type": "content_truncation",
+      "description": "Session 3.3 content is truncated mid-sentence in the Mermaid diagram section ('노이즈 → 이' cuts off), losing the rest of the session.",
+      "fix": "Complete the Mermaid diagram and ensure all remaining sections (활동, 정리 등) are included."
+    },
+    {
+      "session": "3.4",
+      "type": "content_truncation",
+      "description": "Session 3.4 content is truncated mid-sentence ('자연어로 변경 사항을 설명합니다. ChatGPT가 이미지 전체를 이해한 뒤 요청에 맞게 수정합니'), missing the rest of the session.",
+      "fix": "Complete the session content including all concepts, activities, and summary."
+    },
+    {
+      "session": "3.5",
+      "type": "content_truncation",
+      "description": "Session 3.5 content is truncated at the brief analysis table ('| 분석 항목 | 추출할'), missing the remaining 4 concepts, activities, and summary.",
+      "fix": "Complete the full session content."
+    },
+    {
+      "session": "3.1",
+      "type": "terminology",
+      "description": "GPT Image 1.5 is mentioned in the summary as a '2025년 12월' update, but in Session 3.2 it's also referenced as '2025년 12월 GPT Image 1.5 업데이트'. Consistent, but the version name 'GPT Image 1.5' doesn't appear in OpenAI's official naming — verify this is the correct product name vs 'gpt-image-1' API model.",
+      "fix": "Verify the official name. If the API model is 'gpt-image-1', clarify the distinction between the API model name and the consumer-facing feature name to avoid confusion."
+    },
+    {
+      "session": "3.3",
+      "type": "terminology",
+      "description": "'오토리그레시브'는 Session 3.1에서 정의되었으나 Session 3.3에서 다시 설명하면서 미묘하게 다른 표현 사용 — 3.1에서는 '토큰을 순차 생성하여 내부 일관성이 높다', 3.3에서는 '이미지 토큰을 순차적으로 생성합니다'로 일관적이나, 3.3에서 '텍스트 렌더링은 별도의 레이어로 처리'라는 새로운 주장이 추가됨.",
+      "fix": "3.3의 '별도의 레이어로 처리' 주장에 출처를 명시하거나, 3.1의 설명과 통합하여 일관성 유지."
+    },
+    {
+      "session": "3.4",
+      "type": "cross_reference",
+      "description": "Session 3.4의 개요에서 Ch6(인페인팅·아웃페인팅)과 겹치는 내용이 있음 — Select 도구 기반 부분 편집은 사실상 인페인팅의 ChatGPT 버전인데, Ch6과의 관계를 명시하지 않음.",
+      "fix": "Ch6 인페인팅 세션에 대한 forward reference 추가: 'Ch6에서 다양한 플랫폼의 인페인팅 기법을 비교합니다'."
+    },
+    {
+      "session": "3.2",
+      "type": "terminology",
+      "description": "'의도_기반_인터페이스'가 defines에 있으나 제공된 콘텐츠에서 이 개념이 명시적으로 설명되는 부분이 보이지 않음 (truncation 때문일 수 있음).",
+      "fix": "해당 개념이 실제 콘텐츠에서 정의되고 설명되는지 확인."
+    },
+    {
+      "session": "3.5",
+      "type": "activity_design",
+      "description": "실무 프로젝트 세션이지만 제공된 콘텐츠 범위 내에서 구체적인 실습 지시사항(어떤 브랜드, 어떤 브리프)이 아직 등장하지 않음. 가상 브리프의 구체적 내용이 truncation 이후에 있을 수 있으나, 개요 단계에서 예시 브리프를 미리 제시하면 학습자 몰입도가 높아짐.",
+      "fix": "개요 섹션에 가상 브리프 요약(브랜드명, 캠페인 목표, 납품물 수량)을 미리 제시."
+    }
+  ],
+  "hyperlinks": [
+    {
+      "from_session": "3.3",
+      "to_session": "2.3",
+      "anchor_text": "스타일 키워드 사전",
+      "context": "폰트 스타일 3단계 접근법에서 분위기 키워드를 선택할 때, Ch2의 스타일 키워드 관련 세션 참조가 유용"
+    },
+    {
+      "from_session": "3.4",
+      "to_session": "1.4",
+      "anchor_text": "인페인팅 개념",
+      "context": "Select 도구가 사실상 인페인팅의 ChatGPT 구현이므로, Ch1에서 소개된 인페인팅 기본 개념에 대한 back-reference 필요"
+    },
+    {
+      "from_session": "3.5",
+      "to_session": "2.4",
+      "anchor_text": "프롬프트 템플릿",
+      "context": "마스터 프롬프트 3레이어 시스템 설계 시 Ch2에서 배운 프롬프트 템플릿 구조를 활용"
+    },
+    {
+      "from_session": "3.5",
+      "to_session": "3.3",
+      "anchor_text": "텍스트 프롬프트 4요소",
+      "context": "SNS 카드 시리즈에서 텍스트 오버레이 작업 시 Session 3.3의 텍스트 프롬프트 4요소 참조"
+    },
+    {
+      "from_session": "3.4",
+      "to_session": "6.1",
+      "anchor_text": "인페인팅 심화",
+      "context": "Select 도구의 부분 편집을 배운 후, Ch6에서 다른 플랫폼의 인페인팅 기법과 비교할 수 있다는 forward reference"
+    },
+    {
+      "from_session": "3.5",
+      "to_session": "8.1",
+      "anchor_text": "스타일 일관성 심화",
+      "context": "시리즈 일관성 유지 기법을 배운 후, Ch8에서 캐릭터/브랜드 스타일 일관성을 더 깊이 다룬다는 forward reference"
+    }
+  ],
+  "new_glossary_terms": {
+    "Select 도구": "ChatGPT 이미지 편집 인터페이스에서 브러시로 특정 영역을 선택하여 부분 편집(Local Edit)을 수행하는 도구",
+    "Global Edit": "이미지 전체를 대상으로 자연어 프롬프트만으로 변경을 요청하는 편집 방식",
+    "Local Edit": "Select 도구로 특정 영역을 지정한 후 해당 부분만 변경하는 정밀 편집 방식",
+    "마스터 프롬프트": "시리즈 이미지의 일관성을 유지하기 위해 공통 스타일·톤·구도를 정의한 기본 프롬프트 템플릿",
+    "스타일 앵커": "시리즈 콘텐츠에서 일관된 시각적 톤을 유지하기 위해 고정하는 핵심 스타일 요소(색감, 조명, 질감 등)",
+    "톤 드리프트": "멀티턴 대화에서 이미지 시리즈를 생성할 때 회차가 진행될수록 스타일이 점진적으로 변해가는 현상"
+  },
+  "summary": "Chapter 3은 ChatGPT 이미지 생성의 실전 활용을 체계적으로 다루며, 이론(3.1) → 기본 생성(3.2) → 특화 기능(3.3 텍스트, 3.4 편집) → 통합 프로젝트(3.5)의 논리적 흐름이 우수합니다. 용어 일관성도 대체로 양호하며, 각 세션이 이전 세션의 선수 지식을 명시적으로 참조합니다. 주요 문제점은 (1) 4개 세션(3.1, 3.3, 3.4, 3.5)의 콘텐츠가 중간에 잘려 있어 완전성 검증이 불가능한 점, (2) Ch6 인페인팅과의 관계 명시 부족, (3) GPT Image 1.5라는 제품명의 정확성 검증 필요입니다. 콘텐츠가 완전하다는 전제 하에, 난이도 곡선과 활동 설계는 비코딩 디자이너 타겟에 잘 맞춰져 있습니다."
+}

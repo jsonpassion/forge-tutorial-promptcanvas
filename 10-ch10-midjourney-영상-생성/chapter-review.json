@@ -1,0 +1,144 @@
+{
+  "chapter_id": 10,
+  "consistency_score": 0.92,
+  "flow_score": 0.93,
+  "issues": [
+    {
+      "session": "10.1",
+      "type": "truncation",
+      "description": "Session 10.1 content is truncated mid-sentence at '📊 **그림 1**: Midjourne' — incomplete content",
+      "fix": "Complete the truncated Mermaid diagram and surrounding text"
+    },
+    {
+      "session": "10.2",
+      "type": "truncation",
+      "description": "Session 10.2 content is truncated mid-sentence after the Mermaid flowchart",
+      "fix": "Complete the remaining content including the full flowchart and subsequent sections"
+    },
+    {
+      "session": "10.3",
+      "type": "truncation",
+      "description": "Session 10.3 content is truncated mid-sentence after '카메라가 고정된 위치에서 위아래로 회전합니다. `tilt up`으로 건물의 전체 높이'",
+      "fix": "Complete the remaining camera movement types and subsequent sections"
+    },
+    {
+      "session": "10.4",
+      "type": "truncation",
+      "description": "Session 10.4 content is truncated mid-sentence after 'AI가 자연스러운 연속 동작'",
+      "fix": "Complete the Extend Auto/Manual explanation and remaining sections"
+    },
+    {
+      "session": "10.5",
+      "type": "truncation",
+      "description": "Session 10.5 content is truncated inside the Mermaid diagram for the 3-act structure",
+      "fix": "Complete the Mermaid diagram and remaining sections"
+    },
+    {
+      "session": "10.1",
+      "type": "factual_accuracy",
+      "description": "V1 모델 출시일이 '2025년 6월 18일'로 명시되어 있는데, 공식 문서에서 정확한 날짜를 재확인 필요. 또한 '480p/720p' 해상도 사양이 공식 문서와 일치하는지 검증 필요",
+      "fix": "Midjourney 공식 비디오 문서(https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video)와 대조하여 정확한 사양 확인"
+    },
+    {
+      "session": "10.1",
+      "type": "terminology",
+      "description": "'1회 생성: 4개의 클립 동시 생성'이라고 했는데, 10.4에서는 '--bs (Batch Size)' 파라미터로 이를 조절한다고 설명. 기본값이 4인지, 아니면 별도 설정인지 명확하지 않음",
+      "fix": "10.1에서 '기본 배치 사이즈 4개 (--bs 파라미터로 조절 가능, 10.4에서 상세 설명)' 식으로 연결"
+    },
+    {
+      "session": "10.2",
+      "type": "terminology",
+      "description": "'모션 프롬프트 5요소'가 10.2에서 정의되지만, 10.3에서는 '모션 프롬프트 4원칙'이 별도로 정의됨. 5요소(구조)와 4원칙(작성법)의 관계가 명확하지 않아 혼동 가능",
+      "fix": "10.3에서 '10.2에서 배운 5요소 구조를 바탕으로, 특히 카메라 동작에 집중한 4가지 작성 원칙'임을 명시"
+    },
+    {
+      "session": "10.3",
+      "type": "terminology",
+      "description": "'--end 파라미터'가 10.3에서 처음 등장하지만, 10.4에서 'Start/End Frame'이 별도 개념으로 정의됨. --end와 End Frame의 관계가 불명확",
+      "fix": "10.4에서 '--end 파라미터(10.3에서 학습)를 활용한 Start/End Frame 제어'로 연결 명시"
+    },
+    {
+      "session": "10.4",
+      "type": "consistency",
+      "description": "Extend 설명에서 '4초 단위로 확장'이라 하는데, 10.1에서도 동일하게 '4초 단위로 확장'이라 함. 일관성은 좋으나, 공식 문서에서 정확히 4초인지 확인 필요",
+      "fix": "공식 문서 대조 후 확인"
+    },
+    {
+      "session": "10.2",
+      "type": "cross_reference",
+      "description": "'비디오 불가 파라미터' 목록이 정의된다고 하나, 실제 내용이 truncation으로 보이지 않음. 10.1에서 언급한 이미지 전용 파라미터와의 일관성 확인 필요",
+      "fix": "비디오에서 사용 불가한 이미지 파라미터(--ar 외)를 명확히 나열하고, Ch5 파라미터 세션과 교차 참조"
+    },
+    {
+      "session": "10.5",
+      "type": "activity_quality",
+      "description": "숏폼 영상 제작 프로젝트는 종합 실습으로 적절하나, GPU 비용이 상당할 수 있음(5초 클립 = 이미지 8배). 학습자가 실제로 프로젝트를 완수할 수 있는 현실적 비용 가이드라인이 필요",
+      "fix": "구체적인 GPU 비용 예산 시뮬레이션 표를 추가 (예: 21초 영상 1개 완성에 필요한 총 GPU 크레딧)"
+    }
+  ],
+  "hyperlinks": [
+    {
+      "from_session": "10.1",
+      "to_session": "5.1",
+      "anchor_text": "Midjourney 인터페이스와 기본 생성",
+      "context": "이미 존재하는 선수 지식 링크. 적절함"
+    },
+    {
+      "from_session": "10.2",
+      "to_session": "2.1",
+      "anchor_text": "프롬프트 해부학 — 6요소 프레임워크",
+      "context": "이미지 프롬프트 6요소를 모션 프롬프트 5요소와 비교할 때 참조. 이미 존재하나 더 구체적으로 6요소↔5요소 매핑 필요"
+    },
+    {
+      "from_session": "10.2",
+      "to_session": "5.3",
+      "anchor_text": "--ar 파라미터 활용법",
+      "context": "종횡비 선택 시 Ch5에서 배운 --ar 파라미터 지식 참조 필요"
+    },
+    {
+      "from_session": "10.3",
+      "to_session": "10.2",
+      "anchor_text": "시작 프레임 4조건과 모션 프롬프트 5요소",
+      "context": "카메라 무브먼트 프롬프트 작성의 기반이 되는 10.2 내용 참조"
+    },
+    {
+      "from_session": "10.4",
+      "to_session": "10.1",
+      "anchor_text": "GPU 비용 구조 (이미지 대비 8배)",
+      "context": "Extend 반복에 따른 GPU 비용 누적 설명 시 10.1의 비용 표 참조"
+    },
+    {
+      "from_session": "10.5",
+      "to_session": "8.3",
+      "anchor_text": "브랜드 스타일 일관성",
+      "context": "브랜드 숏폼 영상 제작 시 Ch8에서 배운 스타일 일관성 유지 기법 참조 필요"
+    },
+    {
+      "from_session": "10.5",
+      "to_session": "5.4",
+      "anchor_text": "--sref (Style Reference) 활용",
+      "context": "멀티 클립 시퀀스에서 스타일 통일을 위해 --sref 사용 시 Ch5 참조"
+    },
+    {
+      "from_session": "10.5",
+      "to_session": "11.1",
+      "anchor_text": "시각적 스토리텔링의 원리",
+      "context": "Next 섹션에서 Ch11 연결이 언급되어 있으나, 본문에서도 스토리보드 설계 시 미리 Ch11 개념 예고 가능"
+    },
+    {
+      "from_session": "10.1",
+      "to_session": "6.1",
+      "anchor_text": "img2img 기법",
+      "context": "Image-to-Video와 img2img의 개념적 유사성(기존 이미지 → 변환) 비교 시 참조"
+    }
+  ],
+  "new_glossary_terms": {
+    "V1 비디오 모델": "Midjourney의 첫 번째 비디오 생성 모델. Image-to-Video 방식으로 정지 이미지에서 5~21초 영상 클립을 생성하며, 480p/720p 해상도를 지원",
+    "Extend (비디오)": "Midjourney V1에서 생성된 영상의 마지막 프레임을 기반으로 4초씩 추가 영상을 덧붙이는 기능. Auto와 Manual 두 모드 지원",
+    "심리스 루프 (Seamless Loop)": "시작 프레임과 끝 프레임이 자연스럽게 연결되어 무한 반복 재생이 가능한 영상. --loop 파라미터로 생성",
+    "시간적 일관성 (Temporal Coherence)": "영상의 연속 프레임 간에 시각적 요소(색상, 형태, 위치)가 자연스럽게 유지되는 정도",
+    "드리프트 (Drift)": "영상 확장 시 원본의 스타일이나 내용이 점진적으로 변질되는 현상. Extend 반복 시 주의 필요",
+    "3막 미니 스토리": "숏폼 영상을 훅(Hook, 0-3초), 코어(Core, 3-15초), CTA(Call to Action, 15-21초)로 구성하는 스토리텔링 구조"
+  },
+  "summary": "Ch10은 Midjourney V1 비디오 모델을 체계적으로 다루며, 개론→실전→고급 제어→확장→프로젝트의 자연스러운 난이도 곡선을 갖추고 있습니다. 용어 일관성이 전반적으로 높고(consistency 0.92), 세션 간 논리적 흐름도 우수합니다(flow 0.93). 주요 개선점은: (1) 모든 세션이 중간에서 잘려있어 완전한 내용 확인 불가 — 완성 필요, (2) '모션 프롬프트 5요소'와 '4원칙'의 관계 명확화, (3) --end 파라미터와 Start/End Frame 개념의 연결 강화, (4) Ch5(파라미터), Ch8(스타일 일관성), Ch6(img2img)로의 교차 참조 보강이 필요합니다. 활동 설계는 10.5의 종합 프로젝트가 잘 구성되어 있으나, GPU 비용의 현실적 가이드라인 추가가 권장됩니다. 전체적으로 코딩 경험 없는 디자이너 타겟에 적합한 수준과 톤을 유지하고 있습니다."
+}

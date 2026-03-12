@@ -1,0 +1,131 @@
+{
+  "chapter_id": 6,
+  "consistency_score": 0.92,
+  "flow_score": 0.95,
+  "issues": [
+    {
+      "session": "6.3",
+      "type": "typo",
+      "description": "'스스로'는 '스스로'가 아니라 '스스로' → 실제로는 '스스로'가 맞지만 원문에 '스스로'로 되어 있음. 확인 결과 '스스로'는 오타, '스스로'가 아닌 '스스로'... 원문: '스스로 해결할 수 있게 되는 거죠' → '스스로'는 오타",
+      "fix": "'스스로' → '스스로' (실제 원문 확인: '스스로' 라고 적혀있는데 이는 오타. '스스로'가 맞음. 재확인: 원문은 '스스로'이며 이것은 맞는 표기)"
+    },
+    {
+      "session": "6.3",
+      "type": "typo",
+      "description": "6.3 '왜 알아야 할까' 섹션에서 '스스로'가 아니라 원문을 재확인하면 '스스로'로 표기됨 — 사실 한국어 맞춤법상 '스스로'가 맞음. 혼동 철회.",
+      "fix": "N/A — 재확인 결과 이슈 아님"
+    },
+    {
+      "session": "6.1",
+      "type": "content_truncation",
+      "description": "6.1 핵심 개념 섹션의 비교 표가 '|------' 이후 잘려 있음. txt2img vs img2img 비교 테이블 내용이 누락됨",
+      "fix": "비교 테이블 완성 필요 (입력 형태, 출력 특성, 제어 수준, 적합 시나리오 등의 행 추가)"
+    },
+    {
+      "session": "6.2",
+      "type": "content_truncation",
+      "description": "6.2 마스크 원칙 테이블이 '| **경계' 이후 잘려 있음",
+      "fix": "경계 블렌딩, 적정 비율(20-50%) 등 나머지 원칙 행 완성 필요"
+    },
+    {
+      "session": "6.3",
+      "type": "content_truncation",
+      "description": "6.3 3단계 실전 프로세스 테이블의 3단계 행이 '편집 영역과 원본의' 이후 잘려 있음",
+      "fix": "3단계 경계 정리 행 완성 필요"
+    },
+    {
+      "session": "6.4",
+      "type": "content_truncation",
+      "description": "6.4 아웃페인팅 분석 요소 테이블이 '그림자 방향' 이후 잘려 있음",
+      "fix": "조명, 텍스처, 색상 팔레트 등 나머지 행 완성 필요"
+    },
+    {
+      "session": "6.5",
+      "type": "content_truncation",
+      "description": "6.5 Mermaid 다이어그램의 style 지시문이 '#21' 에서 잘려 있음",
+      "fix": "Mermaid style 블록 색상값 완성 필요"
+    },
+    {
+      "session": "6.5",
+      "type": "terminology",
+      "description": "'Retexture'라는 Midjourney V7 기능이 별도 정의 없이 사용됨. Ch5에서도 정의되지 않은 용어",
+      "fix": "괄호로 간단한 설명 추가: 'Retexture(표면 질감 재생성)' 또는 용어 정의 추가"
+    },
+    {
+      "session": "6.5",
+      "type": "terminology",
+      "description": "'FLUX 모델'이 코스 전체에서 처음 등장하며 정의 없이 사용됨",
+      "fix": "코스 범위 외 도구라면 삭제하거나, 간단한 괄호 설명 추가"
+    },
+    {
+      "session": "6.1",
+      "type": "terminology",
+      "description": "SDEdit가 Defines에 있으나 content 미리보기에서는 해당 개념이 등장하지 않음 (잘린 부분에 있을 수 있음). 비코딩 대상 수강생에게 기술 논문 용어가 적절한지 검토 필요",
+      "fix": "SDEdit 개념을 비유 중심으로 설명하거나, 심화 박스로 분리"
+    },
+    {
+      "session": "6.2",
+      "type": "terminology",
+      "description": "'비파괴 편집'이 Concepts에 나열되지만 Defines에 없음. 포토샵 경험 없는 대상에게 정의 필요",
+      "fix": "비파괴 편집(Non-destructive Editing) 용어 정의 추가"
+    },
+    {
+      "session": "6.3",
+      "type": "cross_reference",
+      "description": "6.3에서 'Midjourney Editor'를 언급하지만 이 기능은 6.4에서 더 자세히 다뤄짐. 6.3 시점에서 Editor에 대한 충분한 맥락이 있는지 확인 필요",
+      "fix": "6.3에서 Editor를 간략 소개하거나, 6.4로의 전방 참조 링크 추가"
+    }
+  ],
+  "hyperlinks": [
+    {
+      "from_session": "6.1",
+      "to_session": "3.1",
+      "anchor_text": "ChatGPT 이미지 편집 기능",
+      "context": "ChatGPT(대화형) img2img 설명 시 Ch3에서 배운 GPT-4o 이미지 생성 특징 참조"
+    },
+    {
+      "from_session": "6.1",
+      "to_session": "5.2",
+      "anchor_text": "Midjourney 파라미터",
+      "context": "--iw 파라미터 설명 시 Ch5 파라미터 튜닝 세션 참조"
+    },
+    {
+      "from_session": "6.2",
+      "to_session": "6.1",
+      "anchor_text": "img2img 전체 변환",
+      "context": "이미 존재함 — 적절한 상호 참조"
+    },
+    {
+      "from_session": "6.3",
+      "to_session": "5.3",
+      "anchor_text": "Remix 모드",
+      "context": "Remix 모드 인페인팅이 Defines에 있으므로 Ch5에서의 Remix 기초 설명 참조 필요"
+    },
+    {
+      "from_session": "6.4",
+      "to_session": "2.1",
+      "anchor_text": "구도(Composition) 요소",
+      "context": "구도 재구성을 다룰 때 프롬프트 6요소 중 구도 요소 참조"
+    },
+    {
+      "from_session": "6.5",
+      "to_session": "9.1",
+      "anchor_text": "Adobe Photoshop + Firefly 워크플로우",
+      "context": "멀티 플랫폼 워크플로우에서 Ch9 Photoshop 심화 과정으로의 전방 참조"
+    },
+    {
+      "from_session": "6.5",
+      "to_session": "8.1",
+      "anchor_text": "스타일 일관성 유지",
+      "context": "멀티 플랫폼 핸드오프 시 스타일 일관성이 깨지는 문제 → Ch8 스타일 일관성 챕터 전방 참조"
+    }
+  ],
+  "new_glossary_terms": {
+    "비파괴 편집(Non-destructive Editing)": "원본 이미지를 보존한 채 별도 레이어나 마스크로 편집하여, 언제든 이전 상태로 되돌릴 수 있는 작업 방식",
+    "이미지 핸드오프(Image Handoff)": "하나의 이미지를 한 플랫폼에서 다른 플랫폼으로 전달하여 후속 편집을 이어가는 작업 방식. PNG 포맷으로 품질 보존이 핵심",
+    "80/20 핸드오프 법칙": "한 플랫폼에서 80% 이상 완성한 뒤 나머지 20% 정밀 작업을 위해 다른 플랫폼으로 넘기는 멀티 플랫폼 편집 원칙",
+    "Custom Zoom": "Midjourney에서 줌 아웃 비율과 프롬프트를 동시에 수정하여 아웃페인팅하는 기능",
+    "파노라마 패닝": "Midjourney Pan 기능을 한 방향으로 반복 적용하여 파노라마 형태의 넓은 이미지를 만드는 기법"
+  },
+  "summary": "Ch6은 img2img → 인페인팅 기초 → 인페인팅 고급 → 아웃페인팅 → 통합 프로젝트로 이어지는 논리적 난이도 곡선이 매우 잘 설계되어 있습니다. 각 세션이 '전체 → 부분 → 외부'라는 편집 범위의 자연스러운 확장을 따르며, 6.5에서 세 기법을 조합하는 캡스톤 프로젝트로 마무리하는 구조가 효과적입니다. 주요 개선점은: (1) 다수 세션에서 콘텐츠 테이블이 중간에 잘려 있어 완성 필요, (2) 비코딩 대상임에도 SDEdit 같은 기술 용어가 정의 없이 사용됨, (3) FLUX, Retexture 등 코스 전체에서 미정의 용어 산재, (4) Ch5 Remix 모드·파라미터 세션으로의 역참조 링크 보강 필요. 플랫폼별 비교가 일관되게 ChatGPT·Midjourney·Adobe 3축으로 유지되는 점, 비유 활용이 대상 수준에 적합한 점은 강점입니다."
+}

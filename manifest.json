@@ -1,10 +1,10 @@
 {
-  "title": "2026: Prompt to Pixel 완전 정복",
-  "subtitle": "12챕터 61섹션 튜토리얼",
+  "title": "Prompt to Pixel",
+  "subtitle": "논코더 디자이너를 위한 AI 이미지·영상 생성 실전 가이드. ChatGPT(간단 합성),Gemini·Midjourney(상세 이미지), Midjourney(영상 생성) 등 실무에서 실제로 쓰이는 플랫폼 조합과 Adobe 리터치 워크플로우를 다룬다. 프롬프트 구조(주제, 스타일, 구도, 조명, 매체, 분위기), 네거티브 프롬프트, 파라미터 튜닝, img2img·inpainting·outpainting 편집 기법, ControlNet·참조 이미지 활용, 일관된 캐릭터·브랜드 스타일 유지 전략을 포괄한다. 각 세션은 실제 프롬프트 예시와 결과 비교 중심으로 진행하며, 코드나 프로그래밍 지식 없이 플랫폼 UI와 프롬프트만으로 학습한다. 최종 파트에서는 단순 생성 테크닉을넘어 시각적 스토리텔링, 감정 전달, 타깃 오디언스 공감을 이끌어내는 결과물 기획법을 반드시 다룬다.",
+  "description": "논코더 디자이너를 위한 AI 이미지·영상 생성 실전 가이드. ChatGPT(간단 합성),Gemini·Midjourney(상세 이미지), Midjourney(영상 생성) 등 실무에서 실제로 쓰이는 플랫폼 조합과 Adobe 리터치 워크플로우를 다룬다. 프롬프트 구조(주제, 스타일, 구도, 조명, 매체, 분위기), 네거티브 프롬프트, 파라미터 튜닝, img2img·inpainting·outpainting 편집 기법, ControlNet·참조 이미지 활용, 일관된 캐릭터·브랜드 스타일 유지 전략을 포괄한다. 각 세션은 실제 프롬프트 예시와 결과 비교 중심으로 진행하며, 코드나 프로그래밍 지식 없이 플랫폼 UI와 프롬프트만으로 학습한다. 최종 파트에서는 단순 생성 테크닉을넘어 시각적 스토리텔링, 감정 전달, 타깃 오디언스 공감을 이끌어내는 결과물 기획법을 반드시 다룬다.",
   "version": "1.0.0",
-  "lastUpdated": "2026-03-10",
   "language": "ko",
-  "author": "Jason",
+  "author": "CourseKit",
   "chapters": [
     {
       "id": "01-ch1-ai-이미지-생성-개론",
@@ -15,31 +15,58 @@
           "id": "01-01-생성형-ai가-바꾸는-디자인-워크플로우",
           "title": "01. 생성형 AI가 바꾸는 디자인 워크플로우",
           "file": "01-ch1-ai-이미지-생성-개론/01-01-생성형-ai가-바꾸는-디자인-워크플로우.md",
-          "description": "AI 이미지 생성 기술의 등장 배경, 디자인 산업에 미치는 영향, 논코더 디자이너가 AI를 활용해야 하는 이유"
+          "description": "AI 이미지 생성 기술의 등장 배경, 디자인 산업에 미치는 영향, 논코더 디자이너가 AI를 활용해야 하는 이유",
+          "status": "generated",
+          "key_references": [
+            "https://onlinelibrary.wiley.com/doi/full/10.1111/jade.12558",
+            "https://dl.acm.org/doi/10.1145/3689641"
+          ]
         },
         {
           "id": "02-02-주요-플랫폼-비교-chatgpt-vs-gemini-vs-midjourney",
           "title": "02. 주요 플랫폼 비교 — ChatGPT vs Gemini vs Midjourney",
           "file": "01-ch1-ai-이미지-생성-개론/02-02-주요-플랫폼-비교-chatgpt-vs-gemini-vs-midjourney.md",
-          "description": "세 플랫폼의 생성 품질, 속도, 가격, 편집 기능, 강점 영역 비교. 실제 동일 프롬프트 결과물 비교 분석"
+          "description": "세 플랫폼의 생성 품질, 속도, 가격, 편집 기능, 강점 영역 비교. 실제 동일 프롬프트 결과물 비교 분석",
+          "status": "generated",
+          "key_references": [
+            "https://openai.com/index/introducing-4o-image-generation/",
+            "https://ai.google.dev/gemini-api/docs/image-generation",
+            "https://docs.midjourney.com/hc/en-us"
+          ]
         },
         {
           "id": "03-03-adobe-firefly와-크리에이티브-생태계",
           "title": "03. Adobe Firefly와 크리에이티브 생태계",
           "file": "01-ch1-ai-이미지-생성-개론/03-03-adobe-firefly와-크리에이티브-생태계.md",
-          "description": "Adobe Firefly의 위치, Photoshop·Illustrator 통합 워크플로우, 상업적 안전성(학습 데이터 라이선싱), 다른 플랫폼과의 차별점"
+          "description": "Adobe Firefly의 위치, Photoshop·Illustrator 통합 워크플로우, 상업적 안전성(학습 데이터 라이선싱), 다른 플랫폼과의 차별점",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/firefly/web.html",
+            "https://www.adobe.com/products/firefly/features.html"
+          ]
         },
         {
           "id": "04-04-플랫폼별-계정-설정과-인터페이스-탐색",
           "title": "04. 플랫폼별 계정 설정과 인터페이스 탐색",
           "file": "01-ch1-ai-이미지-생성-개론/04-04-플랫폼별-계정-설정과-인터페이스-탐색.md",
-          "description": "각 플랫폼 가입, 요금제 이해, UI 탐색. ChatGPT 이미지 생성 활성화, Midjourney Discord/웹 인터페이스, Gemini 접속, Firefly 웹앱 둘러보기"
+          "description": "각 플랫폼 가입, 요금제 이해, UI 탐색. ChatGPT 이미지 생성 활성화, Midjourney Discord/웹 인터페이스, Gemini 접속, Firefly 웹앱 둘러보기",
+          "status": "generated",
+          "key_references": [
+            "https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt",
+            "https://docs.midjourney.com/hc/en-us",
+            "https://helpx.adobe.com/firefly/web.html"
+          ]
         },
         {
           "id": "05-05-실무-시나리오별-플랫폼-선택-가이드",
           "title": "05. 실무 시나리오별 플랫폼 선택 가이드",
           "file": "01-ch1-ai-이미지-생성-개론/05-05-실무-시나리오별-플랫폼-선택-가이드.md",
-          "description": "SNS 콘텐츠, 제품 목업, 프레젠테이션 비주얼, 브랜딩 에셋 등 실무 상황별 최적 플랫폼 조합 전략. 멀티 플랫폼 워크플로우 설계"
+          "description": "SNS 콘텐츠, 제품 목업, 프레젠테이션 비주얼, 브랜딩 에셋 등 실무 상황별 최적 플랫폼 조합 전략. 멀티 플랫폼 워크플로우 설계",
+          "status": "generated",
+          "key_references": [
+            "https://bulkimagegeneration.com/blog/en/tutorials/ai-image-generation-trends-2025-a-new-era-of-creativity",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         }
       ]
     },
@@ -52,37 +79,68 @@
           "id": "01-01-프롬프트-해부학-6요소-프레임워크",
           "title": "01. 프롬프트 해부학 — 6요소 프레임워크",
           "file": "02-ch2-프롬프트-구조-마스터/01-01-프롬프트-해부학-6요소-프레임워크.md",
-          "description": "주제(Subject), 스타일(Style), 구도(Composition), 조명(Lighting), 매체(Medium), 분위기(Mood) 각 요소의 정의와 역할. 6요소 조합이 결과에 미치는 영향"
+          "description": "주제(Subject), 스타일(Style), 구도(Composition), 조명(Lighting), 매체(Medium), 분위기(Mood) 각 요소의 정의와 역할. 6요소 조합이 결과에 미치는 영향",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         },
         {
           "id": "02-02-주제와-스타일-무엇을-어떤-느낌으로",
           "title": "02. 주제와 스타일 — 무엇을 어떤 느낌으로",
           "file": "02-ch2-프롬프트-구조-마스터/02-02-주제와-스타일-무엇을-어떤-느낌으로.md",
-          "description": "주제 설명의 구체성 레벨별 결과 비교, 아트 스타일 키워드(사실주의, 수채화, 미니멀, 사이버펑크 등) 효과 비교, 아티스트/시대 레퍼런스 활용법"
+          "description": "주제 설명의 구체성 레벨별 결과 비교, 아트 스타일 키워드(사실주의, 수채화, 미니멀, 사이버펑크 등) 효과 비교, 아티스트/시대 레퍼런스 활용법",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List"
+          ]
         },
         {
           "id": "03-03-구도와-앵글-시선을-이끄는-프레이밍",
           "title": "03. 구도와 앵글 — 시선을 이끄는 프레이밍",
           "file": "02-ch2-프롬프트-구조-마스터/03-03-구도와-앵글-시선을-이끄는-프레이밍.md",
-          "description": "카메라 앵글(버드아이, 로우앵글, 클로즈업 등), 구도 법칙(삼분법, 대칭, 리딩라인), 종횡비(aspect ratio)가 구도에 미치는 영향"
+          "description": "카메라 앵글(버드아이, 로우앵글, 클로즈업 등), 구도 법칙(삼분법, 대칭, 리딩라인), 종횡비(aspect ratio)가 구도에 미치는 영향",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio"
+          ]
         },
         {
           "id": "04-04-조명과-매체-빛과-질감으로-깊이-더하기",
           "title": "04. 조명과 매체 — 빛과 질감으로 깊이 더하기",
           "file": "02-ch2-프롬프트-구조-마스터/04-04-조명과-매체-빛과-질감으로-깊이-더하기.md",
-          "description": "조명 키워드(골든아워, 렘브란트, 네온, 볼류메트릭 등) 효과 비교. 매체 키워드(유화, 디지털아트, 3D렌더, 필름포토 등) 차이와 조합 전략"
+          "description": "조명 키워드(골든아워, 렘브란트, 네온, 볼류메트릭 등) 효과 비교. 매체 키워드(유화, 디지털아트, 3D렌더, 필름포토 등) 차이와 조합 전략",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         },
         {
           "id": "05-05-분위기와-감정-키워드-전략",
           "title": "05. 분위기와 감정 키워드 전략",
           "file": "02-ch2-프롬프트-구조-마스터/05-05-분위기와-감정-키워드-전략.md",
-          "description": "분위기(Mood) 키워드가 색감·톤·전체 느낌에 미치는 영향. 감정 전달을 위한 형용사 조합, 색상 팔레트 지정, 시즌/시간대 키워드 활용"
+          "description": "분위기(Mood) 키워드가 색감·톤·전체 느낌에 미치는 영향. 감정 전달을 위한 형용사 조합, 색상 팔레트 지정, 시즌/시간대 키워드 활용",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://torybarber.com/midjourney-parameter-visual-guide/"
+          ]
         },
         {
           "id": "06-06-나만의-프롬프트-템플릿-만들기",
           "title": "06. 나만의 프롬프트 템플릿 만들기",
           "file": "02-ch2-프롬프트-구조-마스터/06-06-나만의-프롬프트-템플릿-만들기.md",
-          "description": "6요소를 조합한 개인 프롬프트 템플릿 구축. 장르별(제품, 인물, 풍경, 추상) 템플릿 예시. 프롬프트 라이브러리 관리 방법"
+          "description": "6요소를 조합한 개인 프롬프트 템플릿 구축. 장르별(제품, 인물, 풍경, 추상) 템플릿 예시. 프롬프트 라이브러리 관리 방법",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://torybarber.com/midjourney-parameter-visual-guide/",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         }
       ]
     },
@@ -95,31 +153,56 @@
           "id": "01-01-gpt-4o-이미지-생성의-특징과-강점",
           "title": "01. GPT-4o 이미지 생성의 특징과 강점",
           "file": "03-ch3-chatgpt-이미지-생성-실전/01-01-gpt-4o-이미지-생성의-특징과-강점.md",
-          "description": "GPT-4o 네이티브 이미지 생성의 차별점 — 대화 맥락 이해, 텍스트 렌더링 정확도, 멀티턴 편집. DALL-E 대비 개선점과 한계"
+          "description": "GPT-4o 네이티브 이미지 생성의 차별점 — 대화 맥락 이해, 텍스트 렌더링 정확도, 멀티턴 편집. DALL-E 대비 개선점과 한계",
+          "status": "generated",
+          "key_references": [
+            "https://openai.com/index/introducing-4o-image-generation/",
+            "https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt"
+          ]
         },
         {
           "id": "02-02-대화형-이미지-생성-자연어로-그리기",
           "title": "02. 대화형 이미지 생성 — 자연어로 그리기",
           "file": "03-ch3-chatgpt-이미지-생성-실전/02-02-대화형-이미지-생성-자연어로-그리기.md",
-          "description": "자연어 프롬프트로 이미지 생성하기, 멀티턴 대화로 점진적 수정, 스타일 지시, 결과물의 장단점 분석"
+          "description": "자연어 프롬프트로 이미지 생성하기, 멀티턴 대화로 점진적 수정, 스타일 지시, 결과물의 장단점 분석",
+          "status": "generated",
+          "key_references": [
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025",
+            "https://openai.com/index/introducing-4o-image-generation/"
+          ]
         },
         {
           "id": "03-03-텍스트-렌더링과-타이포그래피-이미지",
           "title": "03. 텍스트 렌더링과 타이포그래피 이미지",
           "file": "03-ch3-chatgpt-이미지-생성-실전/03-03-텍스트-렌더링과-타이포그래피-이미지.md",
-          "description": "포스터, 초대장, SNS 카드 등 텍스트 포함 이미지 생성. 정확한 텍스트 렌더링을 위한 프롬프트 전략, 폰트 스타일 지정, 한글 vs 영문 차이"
+          "description": "포스터, 초대장, SNS 카드 등 텍스트 포함 이미지 생성. 정확한 텍스트 렌더링을 위한 프롬프트 전략, 폰트 스타일 지정, 한글 vs 영문 차이",
+          "status": "generated",
+          "key_references": [
+            "https://openai.com/index/introducing-4o-image-generation/",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         },
         {
           "id": "04-04-이미지-업로드와-편집-select-도구-활용",
           "title": "04. 이미지 업로드와 편집 — Select 도구 활용",
           "file": "03-ch3-chatgpt-이미지-생성-실전/04-04-이미지-업로드와-편집-select-도구-활용.md",
-          "description": "기존 이미지 업로드 후 수정 요청, Select 도구로 특정 영역 인페인팅, 배경 변경, 요소 추가/제거, 스타일 변환"
+          "description": "기존 이미지 업로드 후 수정 요청, Select 도구로 특정 영역 인페인팅, 배경 변경, 요소 추가/제거, 스타일 변환",
+          "status": "generated",
+          "key_references": [
+            "https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         },
         {
           "id": "05-05-chatgpt-이미지-생성-실무-프로젝트",
           "title": "05. ChatGPT 이미지 생성 실무 프로젝트",
           "file": "03-ch3-chatgpt-이미지-생성-실전/05-05-chatgpt-이미지-생성-실무-프로젝트.md",
-          "description": "실전 프로젝트: SNS 콘텐츠 시리즈 제작. 브랜드 컬러 적용, 시리즈 일관성 유지, 텍스트 오버레이, 결과물 최적화 및 다운로드"
+          "description": "실전 프로젝트: SNS 콘텐츠 시리즈 제작. 브랜드 컬러 적용, 시리즈 일관성 유지, 텍스트 오버레이, 결과물 최적화 및 다운로드",
+          "status": "generated",
+          "key_references": [
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025",
+            "https://openai.com/index/introducing-4o-image-generation/"
+          ]
         }
       ]
     },
@@ -132,25 +215,44 @@
           "id": "01-01-gemini-이미지-생성의-특징과-접근법",
           "title": "01. Gemini 이미지 생성의 특징과 접근법",
           "file": "04-ch4-gemini-이미지-생성-실전/01-01-gemini-이미지-생성의-특징과-접근법.md",
-          "description": "Gemini 이미지 생성 모델의 특성, 지원 기능(텍스트→이미지, 이미지 편집, 스타일 전환), 무료/유료 사용 범위, ChatGPT 대비 강점"
+          "description": "Gemini 이미지 생성 모델의 특성, 지원 기능(텍스트→이미지, 이미지 편집, 스타일 전환), 무료/유료 사용 범위, ChatGPT 대비 강점",
+          "status": "generated",
+          "key_references": [
+            "https://ai.google.dev/gemini-api/docs/image-generation"
+          ]
         },
         {
           "id": "02-02-고품질-이미지-생성과-스타일-전환",
           "title": "02. 고품질 이미지 생성과 스타일 전환",
           "file": "04-ch4-gemini-이미지-생성-실전/02-02-고품질-이미지-생성과-스타일-전환.md",
-          "description": "Gemini로 고해상도 이미지 생성, 다양한 스타일(포토리얼, 일러스트, 만화 등) 전환 실습, 프롬프트 구조 최적화, 결과 비교 분석"
+          "description": "Gemini로 고해상도 이미지 생성, 다양한 스타일(포토리얼, 일러스트, 만화 등) 전환 실습, 프롬프트 구조 최적화, 결과 비교 분석",
+          "status": "generated",
+          "key_references": [
+            "https://ai.google.dev/gemini-api/docs/image-generation",
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/"
+          ]
         },
         {
           "id": "03-03-gemini-이미지-편집과-변환",
           "title": "03. Gemini 이미지 편집과 변환",
           "file": "04-ch4-gemini-이미지-생성-실전/03-03-gemini-이미지-편집과-변환.md",
-          "description": "기존 이미지 업로드 후 편집, 배경 변경, 요소 추가/제거, 스타일 변환(사진→일러스트), 텍스트 기반 정밀 수정"
+          "description": "기존 이미지 업로드 후 편집, 배경 변경, 요소 추가/제거, 스타일 변환(사진→일러스트), 텍스트 기반 정밀 수정",
+          "status": "generated",
+          "key_references": [
+            "https://ai.google.dev/gemini-api/docs/image-generation",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         },
         {
           "id": "04-04-chatgpt-vs-gemini-실전-비교와-조합-전략",
           "title": "04. ChatGPT vs Gemini 실전 비교와 조합 전략",
           "file": "04-ch4-gemini-이미지-생성-실전/04-04-chatgpt-vs-gemini-실전-비교와-조합-전략.md",
-          "description": "동일 프롬프트로 두 플랫폼 결과 비교. 각 플랫폼이 우위인 시나리오 정리. 두 플랫폼을 조합한 효율적 워크플로우 설계"
+          "description": "동일 프롬프트로 두 플랫폼 결과 비교. 각 플랫폼이 우위인 시나리오 정리. 두 플랫폼을 조합한 효율적 워크플로우 설계",
+          "status": "generated",
+          "key_references": [
+            "https://ai.google.dev/gemini-api/docs/image-generation",
+            "https://openai.com/index/introducing-4o-image-generation/"
+          ]
         }
       ]
     },
@@ -163,37 +265,68 @@
           "id": "01-01-midjourney-인터페이스와-기본-생성",
           "title": "01. Midjourney 인터페이스와 기본 생성",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/01-01-midjourney-인터페이스와-기본-생성.md",
-          "description": "Midjourney 웹 인터페이스 탐색, 기본 프롬프트 입력, 이미지 생성 흐름, 그리드 선택, Upscale/Variation 기본 사용법"
+          "description": "Midjourney 웹 인터페이스 탐색, 기본 프롬프트 입력, 이미지 생성 흐름, 그리드 선택, Upscale/Variation 기본 사용법",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us",
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List"
+          ]
         },
         {
           "id": "02-02-종횡비--ar와-구도-제어",
           "title": "02. 종횡비(--ar)와 구도 제어",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/02-02-종횡비--ar와-구도-제어.md",
-          "description": "종횡비 파라미터의 효과와 활용. 1:1, 16:9, 9:16, 3:2 등 용도별 최적 비율. 종횡비가 구도와 피사체 배치에 미치는 영향"
+          "description": "종횡비 파라미터의 효과와 활용. 1:1, 16:9, 9:16, 3:2 등 용도별 최적 비율. 종횡비가 구도와 피사체 배치에 미치는 영향",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/31894244298125-Aspect-Ratio",
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List"
+          ]
         },
         {
           "id": "03-03-스타일라이즈--stylize와-미학-제어",
           "title": "03. 스타일라이즈(--stylize)와 미학 제어",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/03-03-스타일라이즈--stylize와-미학-제어.md",
-          "description": "--stylize 파라미터 값별(0~1000) 결과 비교. 낮은 값(프롬프트 충실)과 높은 값(미학 극대화)의 차이. 프롬프트 내용과 스타일라이즈 밸런스 전략"
+          "description": "--stylize 파라미터 값별(0~1000) 결과 비교. 낮은 값(프롬프트 충실)과 높은 값(미학 극대화)의 차이. 프롬프트 내용과 스타일라이즈 밸런스 전략",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List",
+            "https://midlibrary.io/midguide/midjourney-v6-in-depth-review-part-3-parameters"
+          ]
         },
         {
           "id": "04-04-카오스--chaos와-다양성-탐색",
           "title": "04. 카오스(--chaos)와 다양성 탐색",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/04-04-카오스--chaos와-다양성-탐색.md",
-          "description": "--chaos 파라미터로 결과 다양성 제어. 낮은 chaos(일관된 결과) vs 높은 chaos(예상 밖 변화). 아이디어 탐색 단계와 최종 제작 단계에서의 활용 전략"
+          "description": "--chaos 파라미터로 결과 다양성 제어. 낮은 chaos(일관된 결과) vs 높은 chaos(예상 밖 변화). 아이디어 탐색 단계와 최종 제작 단계에서의 활용 전략",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List",
+            "https://torybarber.com/midjourney-parameter-visual-guide/"
+          ]
         },
         {
           "id": "05-05-네거티브-프롬프트--no와-품질-제어",
           "title": "05. 네거티브 프롬프트(--no)와 품질 제어",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/05-05-네거티브-프롬프트--no와-품질-제어.md",
-          "description": "Midjourney의 --no 파라미터로 원치 않는 요소 제거. 효과적인 네거티브 키워드 전략. 다른 플랫폼의 네거티브 프롬프트 방식과 비교"
+          "description": "Midjourney의 --no 파라미터로 원치 않는 요소 제거. 효과적인 네거티브 키워드 전략. 다른 플랫폼의 네거티브 프롬프트 방식과 비교",
+          "status": "generated",
+          "key_references": [
+            "https://getimg.ai/guides/guide-to-negative-prompts-in-stable-diffusion",
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List"
+          ]
         },
         {
           "id": "06-06-파라미터-조합과-remixvariation-활용",
           "title": "06. 파라미터 조합과 Remix·Variation 활용",
           "file": "05-ch5-midjourney-기본과-파라미터-튜닝/06-06-파라미터-조합과-remixvariation-활용.md",
-          "description": "여러 파라미터의 시너지 조합 전략. Remix 모드로 프롬프트 변형, Variation으로 미세 조정, Upscale로 고해상도 출력. 반복 워크플로우 설계"
+          "description": "여러 파라미터의 시너지 조합 전략. Remix 모드로 프롬프트 변형, Variation으로 미세 조정, Upscale로 고해상도 출력. 반복 워크플로우 설계",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List",
+            "https://torybarber.com/midjourney-parameter-visual-guide/",
+            "https://midlibrary.io/midguide/midjourney-v6-in-depth-review-part-3-parameters"
+          ]
         }
       ]
     },
@@ -206,31 +339,57 @@
           "id": "01-01-img2img-이미지-기반-변환의-원리",
           "title": "01. img2img — 이미지 기반 변환의 원리",
           "file": "06-ch6-이미지-편집-기법-img2img인페인팅아웃페인팅/01-01-img2img-이미지-기반-변환의-원리.md",
-          "description": "img2img의 개념과 활용 시나리오. 스케치→완성 이미지, 사진→일러스트, 러프 시안→정교한 결과물. 각 플랫폼별 img2img 지원 현황"
+          "description": "img2img의 개념과 활용 시나리오. 스케치→완성 이미지, 사진→일러스트, 러프 시안→정교한 결과물. 각 플랫폼별 img2img 지원 현황",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/inpainting_basics/",
+            "https://docs.midjourney.com/hc/en-us"
+          ]
         },
         {
           "id": "02-02-인페인팅-기초-부분-수정의-기술",
           "title": "02. 인페인팅 기초 — 부분 수정의 기술",
           "file": "06-ch6-이미지-편집-기법-img2img인페인팅아웃페인팅/02-02-인페인팅-기초-부분-수정의-기술.md",
-          "description": "인페인팅의 원리와 마스크 선택법. ChatGPT Select 도구, Firefly Generative Fill, Midjourney 인페인팅 비교. 자연스러운 결과를 위한 마스크 범위와 프롬프트 전략"
+          "description": "인페인팅의 원리와 마스크 선택법. ChatGPT Select 도구, Firefly Generative Fill, Midjourney 인페인팅 비교. 자연스러운 결과를 위한 마스크 범위와 프롬프트 전략",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/inpainting_basics/",
+            "https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt"
+          ]
         },
         {
           "id": "03-03-인페인팅-고급-복잡한-편집-시나리오",
           "title": "03. 인페인팅 고급 — 복잡한 편집 시나리오",
           "file": "06-ch6-이미지-편집-기법-img2img인페인팅아웃페인팅/03-03-인페인팅-고급-복잡한-편집-시나리오.md",
-          "description": "인물 표정/포즈 변경, 의상 교체, 배경 오브젝트 추가/제거, 텍스처 수정 등 고급 인페인팅. 반복 인페인팅으로 점진적 개선하는 전략"
+          "description": "인물 표정/포즈 변경, 의상 교체, 배경 오브젝트 추가/제거, 텍스처 수정 등 고급 인페인팅. 반복 인페인팅으로 점진적 개선하는 전략",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/inpainting_basics/",
+            "https://helpx.adobe.com/firefly/web.html"
+          ]
         },
         {
           "id": "04-04-아웃페인팅-캔버스-확장과-구도-재구성",
           "title": "04. 아웃페인팅 — 캔버스 확장과 구도 재구성",
           "file": "06-ch6-이미지-편집-기법-img2img인페인팅아웃페인팅/04-04-아웃페인팅-캔버스-확장과-구도-재구성.md",
-          "description": "아웃페인팅으로 이미지 경계 확장. 구도 재구성, 종횡비 변경 활용. ChatGPT, Firefly, Midjourney 각 플랫폼의 아웃페인팅 기능과 결과 비교"
+          "description": "아웃페인팅으로 이미지 경계 확장. 구도 재구성, 종횡비 변경 활용. ChatGPT, Firefly, Midjourney 각 플랫폼의 아웃페인팅 기능과 결과 비교",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/outpainting/",
+            "https://www.adobe.com/products/firefly/features.html"
+          ]
         },
         {
           "id": "05-05-편집-기법-조합-실전-프로젝트",
           "title": "05. 편집 기법 조합 실전 프로젝트",
           "file": "06-ch6-이미지-편집-기법-img2img인페인팅아웃페인팅/05-05-편집-기법-조합-실전-프로젝트.md",
-          "description": "실전 프로젝트: 한 장의 이미지에 img2img → 인페인팅 → 아웃페인팅을 순차 적용하여 완성도 높은 결과물 제작. 멀티 플랫폼 편집 워크플로우"
+          "description": "실전 프로젝트: 한 장의 이미지에 img2img → 인페인팅 → 아웃페인팅을 순차 적용하여 완성도 높은 결과물 제작. 멀티 플랫폼 편집 워크플로우",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/inpainting_basics/",
+            "https://stable-diffusion-art.com/outpainting/",
+            "https://helpx.adobe.com/firefly/web.html"
+          ]
         }
       ]
     },
@@ -243,31 +402,56 @@
           "id": "01-01-controlnet-개요-참조-이미지로-제어하기",
           "title": "01. ControlNet 개요 — 참조 이미지로 제어하기",
           "file": "07-ch7-controlnet과-참조-이미지-활용/01-01-controlnet-개요-참조-이미지로-제어하기.md",
-          "description": "ControlNet의 개념과 원리. 왜 프롬프트만으로는 부족한가. Canny, Depth, OpenPose, SoftEdge 등 주요 모델의 역할과 적합한 사용 시나리오"
+          "description": "ControlNet의 개념과 원리. 왜 프롬프트만으로는 부족한가. Canny, Depth, OpenPose, SoftEdge 등 주요 모델의 역할과 적합한 사용 시나리오",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/controlnet/"
+          ]
         },
         {
           "id": "02-02-구도와-깊이-제어-cannydepth-활용",
           "title": "02. 구도와 깊이 제어 — Canny·Depth 활용",
           "file": "07-ch7-controlnet과-참조-이미지-활용/02-02-구도와-깊이-제어-cannydepth-활용.md",
-          "description": "Canny Edge로 윤곽선 기반 구도 제어, Depth Map으로 원근감 유지. 참조 이미지에서 구도만 추출해 새로운 스타일로 재생성하는 워크플로우"
+          "description": "Canny Edge로 윤곽선 기반 구도 제어, Depth Map으로 원근감 유지. 참조 이미지에서 구도만 추출해 새로운 스타일로 재생성하는 워크플로우",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/controlnet/",
+            "https://docs.midjourney.com/hc/en-us"
+          ]
         },
         {
           "id": "03-03-포즈-제어-openpose와-인물-생성",
           "title": "03. 포즈 제어 — OpenPose와 인물 생성",
           "file": "07-ch7-controlnet과-참조-이미지-활용/03-03-포즈-제어-openpose와-인물-생성.md",
-          "description": "OpenPose로 인물 포즈 정밀 제어. 참조 사진의 포즈를 다른 스타일/캐릭터에 적용. 그룹 인물 포즈, 액션 포즈 제어 실습"
+          "description": "OpenPose로 인물 포즈 정밀 제어. 참조 사진의 포즈를 다른 스타일/캐릭터에 적용. 그룹 인물 포즈, 액션 포즈 제어 실습",
+          "status": "generated",
+          "key_references": [
+            "https://stable-diffusion-art.com/controlnet/",
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/"
+          ]
         },
         {
           "id": "04-04-midjourney---sref-스타일-레퍼런스",
           "title": "04. Midjourney --sref 스타일 레퍼런스",
           "file": "07-ch7-controlnet과-참조-이미지-활용/04-04-midjourney---sref-스타일-레퍼런스.md",
-          "description": "--sref 파라미터의 원리와 사용법. 스타일 레퍼런스 URL/코드 지정, --sw(스타일 가중치) 조절, 여러 스타일 혼합, SREF 코드 라이브러리 활용"
+          "description": "--sref 파라미터의 원리와 사용법. 스타일 레퍼런스 URL/코드 지정, --sw(스타일 가중치) 조절, 여러 스타일 혼합, SREF 코드 라이브러리 활용",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference",
+            "https://sref-midjourney.com/",
+            "https://sref-midjourney.com/cheatsheet"
+          ]
         },
         {
           "id": "05-05-midjourney---cref-캐릭터-레퍼런스",
           "title": "05. Midjourney --cref 캐릭터 레퍼런스",
           "file": "07-ch7-controlnet과-참조-이미지-활용/05-05-midjourney---cref-캐릭터-레퍼런스.md",
-          "description": "--cref 파라미터로 동일 캐릭터를 여러 장면에서 일관되게 생성. 캐릭터 레퍼런스 이미지 준비, --cw(캐릭터 가중치) 조절, sref+cref 조합 활용"
+          "description": "--cref 파라미터로 동일 캐릭터를 여러 장면에서 일관되게 생성. 캐릭터 레퍼런스 이미지 준비, --cw(캐릭터 가중치) 조절, sref+cref 조합 활용",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32162917505293-Character-Reference",
+            "https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference"
+          ]
         }
       ]
     },
@@ -280,31 +464,57 @@
           "id": "01-01-캐릭터-일관성의-도전과-전략",
           "title": "01. 캐릭터 일관성의 도전과 전략",
           "file": "08-ch8-캐릭터브랜드-스타일-일관성-유지/01-01-캐릭터-일관성의-도전과-전략.md",
-          "description": "AI 이미지 생성에서 캐릭터 일관성이 어려운 이유. 프롬프트 기반 일관성 유지 기법 — 상세 외형 설명, 시드 활용, 스타일 고정 전략"
+          "description": "AI 이미지 생성에서 캐릭터 일관성이 어려운 이유. 프롬프트 기반 일관성 유지 기법 — 상세 외형 설명, 시드 활용, 스타일 고정 전략",
+          "status": "generated",
+          "key_references": [
+            "https://www.lovart.ai/blog/ai-character-consistency",
+            "https://docs.midjourney.com/hc/en-us/articles/32162917505293-Character-Reference"
+          ]
         },
         {
           "id": "02-02-캐릭터-시트와-턴어라운드-제작",
           "title": "02. 캐릭터 시트와 턴어라운드 제작",
           "file": "08-ch8-캐릭터브랜드-스타일-일관성-유지/02-02-캐릭터-시트와-턴어라운드-제작.md",
-          "description": "캐릭터 디자인 시트(정면/측면/후면) 생성 프롬프트. 표정 시트, 의상 변형 시트 제작. 생성된 시트를 --cref로 활용하는 워크플로우"
+          "description": "캐릭터 디자인 시트(정면/측면/후면) 생성 프롬프트. 표정 시트, 의상 변형 시트 제작. 생성된 시트를 --cref로 활용하는 워크플로우",
+          "status": "generated",
+          "key_references": [
+            "https://www.lovart.ai/blog/ai-character-consistency",
+            "https://docs.midjourney.com/hc/en-us/articles/32162917505293-Character-Reference"
+          ]
         },
         {
           "id": "03-03-브랜드-스타일-가이드-구축",
           "title": "03. 브랜드 스타일 가이드 구축",
           "file": "08-ch8-캐릭터브랜드-스타일-일관성-유지/03-03-브랜드-스타일-가이드-구축.md",
-          "description": "브랜드 컬러, 톤, 비주얼 무드를 정의하는 AI 스타일 가이드 제작. --sref 코드 선정과 관리, 프롬프트 프리셋 체계화, 팀 공유용 스타일 문서 작성"
+          "description": "브랜드 컬러, 톤, 비주얼 무드를 정의하는 AI 스타일 가이드 제작. --sref 코드 선정과 관리, 프롬프트 프리셋 체계화, 팀 공유용 스타일 문서 작성",
+          "status": "generated",
+          "key_references": [
+            "https://sref-midjourney.com/cheatsheet",
+            "https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference"
+          ]
         },
         {
           "id": "04-04-시리즈-콘텐츠-제작-워크플로우",
           "title": "04. 시리즈 콘텐츠 제작 워크플로우",
           "file": "08-ch8-캐릭터브랜드-스타일-일관성-유지/04-04-시리즈-콘텐츠-제작-워크플로우.md",
-          "description": "일관된 비주얼의 시리즈 콘텐츠(카드뉴스, 웹툰, 교육 자료 등) 제작. 첫 이미지에서 스타일 추출 → 시리즈 전체 적용. 멀티 플랫폼 조합 전략"
+          "description": "일관된 비주얼의 시리즈 콘텐츠(카드뉴스, 웹툰, 교육 자료 등) 제작. 첫 이미지에서 스타일 추출 → 시리즈 전체 적용. 멀티 플랫폼 조합 전략",
+          "status": "generated",
+          "key_references": [
+            "https://www.lovart.ai/blog/ai-character-consistency",
+            "https://sref-midjourney.com/"
+          ]
         },
         {
           "id": "05-05-일관성-실전-프로젝트-캐릭터-스토리북",
           "title": "05. 일관성 실전 프로젝트 — 캐릭터 스토리북",
           "file": "08-ch8-캐릭터브랜드-스타일-일관성-유지/05-05-일관성-실전-프로젝트-캐릭터-스토리북.md",
-          "description": "종합 프로젝트: 하나의 캐릭터가 5개 장면에 등장하는 미니 스토리북 제작. 캐릭터 시트 → 장면별 생성 → 스타일 통일 → 최종 시퀀스 완성"
+          "description": "종합 프로젝트: 하나의 캐릭터가 5개 장면에 등장하는 미니 스토리북 제작. 캐릭터 시트 → 장면별 생성 → 스타일 통일 → 최종 시퀀스 완성",
+          "status": "generated",
+          "key_references": [
+            "https://www.lovart.ai/blog/ai-character-consistency",
+            "https://docs.midjourney.com/hc/en-us/articles/32162917505293-Character-Reference",
+            "https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference"
+          ]
         }
       ]
     },
@@ -317,31 +527,57 @@
           "id": "01-01-adobe-firefly-웹앱-핵심-기능",
           "title": "01. Adobe Firefly 웹앱 핵심 기능",
           "file": "09-ch9-adobe-photoshop-firefly-리터치-워크플로우/01-01-adobe-firefly-웹앱-핵심-기능.md",
-          "description": "Firefly 웹앱에서 텍스트→이미지 생성, Generative Fill, 배경 제거, 텍스트 효과 생성. 각 기능의 실무 활용 시나리오와 결과물 품질 평가"
+          "description": "Firefly 웹앱에서 텍스트→이미지 생성, Generative Fill, 배경 제거, 텍스트 효과 생성. 각 기능의 실무 활용 시나리오와 결과물 품질 평가",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/firefly/web.html",
+            "https://www.adobe.com/products/firefly/features.html"
+          ]
         },
         {
           "id": "02-02-photoshop-generative-fill-마스터",
           "title": "02. Photoshop Generative Fill 마스터",
           "file": "09-ch9-adobe-photoshop-firefly-리터치-워크플로우/02-02-photoshop-generative-fill-마스터.md",
-          "description": "Photoshop에서 선택 영역 + Generative Fill로 정밀 편집. 오브젝트 추가/제거, 배경 교체, 의상 변경. 프롬프트 작성법과 여러 변형 중 최적 선택"
+          "description": "Photoshop에서 선택 영역 + Generative Fill로 정밀 편집. 오브젝트 추가/제거, 배경 교체, 의상 변경. 프롬프트 작성법과 여러 변형 중 최적 선택",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html",
+            "https://helpx.adobe.com/firefly/web.html"
+          ]
         },
         {
           "id": "03-03-generative-expand와-이미지-확장",
           "title": "03. Generative Expand와 이미지 확장",
           "file": "09-ch9-adobe-photoshop-firefly-리터치-워크플로우/03-03-generative-expand와-이미지-확장.md",
-          "description": "Photoshop Generative Expand로 캔버스 확장. 종횡비 변경, 배경 자연스럽게 연장, 크롭된 이미지 복원. Firefly 아웃페인팅과 비교"
+          "description": "Photoshop Generative Expand로 캔버스 확장. 종횡비 변경, 배경 자연스럽게 연장, 크롭된 이미지 복원. Firefly 아웃페인팅과 비교",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html",
+            "https://www.adobe.com/products/firefly/features.html"
+          ]
         },
         {
           "id": "04-04-ai-생성-이미지-결함-보정-기법",
           "title": "04. AI 생성 이미지 결함 보정 기법",
           "file": "09-ch9-adobe-photoshop-firefly-리터치-워크플로우/04-04-ai-생성-이미지-결함-보정-기법.md",
-          "description": "AI 생성 이미지의 흔한 결함(손가락 오류, 텍스처 불일치, 아티팩트) 보정. Generative Fill + 전통 보정 도구 조합. 색보정, 선명도, 노이즈 제거 마무리"
+          "description": "AI 생성 이미지의 흔한 결함(손가락 오류, 텍스처 불일치, 아티팩트) 보정. Generative Fill + 전통 보정 도구 조합. 색보정, 선명도, 노이즈 제거 마무리",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html",
+            "https://helpx.adobe.com/firefly/web.html"
+          ]
         },
         {
           "id": "05-05-통합-리터치-워크플로우-프로젝트",
           "title": "05. 통합 리터치 워크플로우 프로젝트",
           "file": "09-ch9-adobe-photoshop-firefly-리터치-워크플로우/05-05-통합-리터치-워크플로우-프로젝트.md",
-          "description": "종합 프로젝트: AI 생성(Midjourney/ChatGPT) → Firefly 1차 편집 → Photoshop 정밀 리터치 → 최종 출력. 해상도 최적화, 파일 포맷, 인쇄/디지털 출력 설정"
+          "description": "종합 프로젝트: AI 생성(Midjourney/ChatGPT) → Firefly 1차 편집 → Photoshop 정밀 리터치 → 최종 출력. 해상도 최적화, 파일 포맷, 인쇄/디지털 출력 설정",
+          "status": "generated",
+          "key_references": [
+            "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html",
+            "https://helpx.adobe.com/firefly/web.html",
+            "https://www.adobe.com/products/firefly/features.html"
+          ]
         }
       ]
     },
@@ -354,31 +590,57 @@
           "id": "01-01-midjourney-비디오-모델-소개",
           "title": "01. Midjourney 비디오 모델 소개",
           "file": "10-ch10-midjourney-영상-생성/01-01-midjourney-비디오-모델-소개.md",
-          "description": "Midjourney V1 비디오 모델의 특성, 지원 기능, 제약사항. 다른 영상 생성 도구(Runway, Pika 등)와의 차별점. 영상 생성 UI와 기본 흐름"
+          "description": "Midjourney V1 비디오 모델의 특성, 지원 기능, 제약사항. 다른 영상 생성 도구(Runway, Pika 등)와의 차별점. 영상 생성 UI와 기본 흐름",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://updates.midjourney.com/introducing-our-v1-video-model/"
+          ]
         },
         {
           "id": "02-02-image-to-video-정지-이미지에-생명-불어넣기",
           "title": "02. Image-to-Video — 정지 이미지에 생명 불어넣기",
           "file": "10-ch10-midjourney-영상-생성/02-02-image-to-video-정지-이미지에-생명-불어넣기.md",
-          "description": "기존 Midjourney 이미지를 비디오로 변환. 적합한 소스 이미지 선택법, 비디오 변환 프롬프트 작성, 결과물 품질 최적화 전략"
+          "description": "기존 Midjourney 이미지를 비디오로 변환. 적합한 소스 이미지 선택법, 비디오 변환 프롬프트 작성, 결과물 품질 최적화 전략",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://docs.midjourney.com/hc/en-us"
+          ]
         },
         {
           "id": "03-03-모션과-카메라-제어",
           "title": "03. 모션과 카메라 제어",
           "file": "10-ch10-midjourney-영상-생성/03-03-모션과-카메라-제어.md",
-          "description": "모션 방향, 속도, 강도 파라미터 조절. 카메라 무브먼트(줌인/아웃, 팬, 틸트) 제어. 부드럽고 자연스러운 영상을 위한 설정 최적화"
+          "description": "모션 방향, 속도, 강도 파라미터 조절. 카메라 무브먼트(줌인/아웃, 팬, 틸트) 제어. 부드럽고 자연스러운 영상을 위한 설정 최적화",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://www.godofprompt.ai/blog/midjourney-2025-v7-timeline-and-video-features"
+          ]
         },
         {
           "id": "04-04-영상-확장과-반복-생성",
           "title": "04. 영상 확장과 반복 생성",
           "file": "10-ch10-midjourney-영상-생성/04-04-영상-확장과-반복-생성.md",
-          "description": "비디오 클립 확장(연장), 여러 클립 연결, 루프 영상 제작. 일관된 스타일의 시퀀스 영상 생성 전략"
+          "description": "비디오 클립 확장(연장), 여러 클립 연결, 루프 영상 제작. 일관된 스타일의 시퀀스 영상 생성 전략",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://updates.midjourney.com/introducing-our-v1-video-model/"
+          ]
         },
         {
           "id": "05-05-숏폼-영상-콘텐츠-제작-프로젝트",
           "title": "05. 숏폼 영상 콘텐츠 제작 프로젝트",
           "file": "10-ch10-midjourney-영상-생성/05-05-숏폼-영상-콘텐츠-제작-프로젝트.md",
-          "description": "실전 프로젝트: 브랜드 소개 또는 제품 티저 숏폼 영상 제작. 스토리보드 기획 → 키 이미지 생성 → 비디오 변환 → 시퀀스 구성까지 전체 워크플로우"
+          "description": "실전 프로젝트: 브랜드 소개 또는 제품 티저 숏폼 영상 제작. 스토리보드 기획 → 키 이미지 생성 → 비디오 변환 → 시퀀스 구성까지 전체 워크플로우",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://www.godofprompt.ai/blog/midjourney-2025-v7-timeline-and-video-features",
+            "https://updates.midjourney.com/introducing-our-v1-video-model/"
+          ]
         }
       ]
     },
@@ -391,31 +653,57 @@
           "id": "01-01-시각적-스토리텔링의-원리",
           "title": "01. 시각적 스토리텔링의 원리",
           "file": "11-ch11-시각적-스토리텔링과-감정-전달/01-01-시각적-스토리텔링의-원리.md",
-          "description": "스토리텔링과 비주얼의 관계. 한 장의 이미지로 이야기 전달하기 — 인물, 환경, 갈등, 감정의 시각적 표현. AI 시대의 비주얼 내러티브"
+          "description": "스토리텔링과 비주얼의 관계. 한 장의 이미지로 이야기 전달하기 — 인물, 환경, 갈등, 감정의 시각적 표현. AI 시대의 비주얼 내러티브",
+          "status": "generated",
+          "key_references": [
+            "https://aijourn.com/ai-powered-visual-storytelling-transforming-content-creation-in-2025/",
+            "https://www.technology.org/2025/04/01/how-will-ai-dramatically-shape-visual-storytelling/"
+          ]
         },
         {
           "id": "02-02-색채-심리학과-감정-팔레트",
           "title": "02. 색채 심리학과 감정 팔레트",
           "file": "11-ch11-시각적-스토리텔링과-감정-전달/02-02-색채-심리학과-감정-팔레트.md",
-          "description": "색상이 감정에 미치는 영향 — 따뜻한 색/차가운 색, 채도/명도와 무드. 감정별 색채 팔레트 설계. AI 프롬프트에서 색상 제어 키워드 활용법"
+          "description": "색상이 감정에 미치는 영향 — 따뜻한 색/차가운 색, 채도/명도와 무드. 감정별 색채 팔레트 설계. AI 프롬프트에서 색상 제어 키워드 활용법",
+          "status": "generated",
+          "key_references": [
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://aijourn.com/ai-powered-visual-storytelling-transforming-content-creation-in-2025/"
+          ]
         },
         {
           "id": "03-03-구도와-시선-유도로-메시지-강화",
           "title": "03. 구도와 시선 유도로 메시지 강화",
           "file": "11-ch11-시각적-스토리텔링과-감정-전달/03-03-구도와-시선-유도로-메시지-강화.md",
-          "description": "시선 유도 기법(리딩라인, 프레이밍, 황금비), 긴장감·안정감 구도, 여백의 활용. 프롬프트에서 구도를 정밀 지시하는 방법. 감정 전달을 극대화하는 앵글 전략"
+          "description": "시선 유도 기법(리딩라인, 프레이밍, 황금비), 긴장감·안정감 구도, 여백의 활용. 프롬프트에서 구도를 정밀 지시하는 방법. 감정 전달을 극대화하는 앵글 전략",
+          "status": "generated",
+          "key_references": [
+            "https://www.technology.org/2025/04/01/how-will-ai-dramatically-shape-visual-storytelling/",
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/"
+          ]
         },
         {
           "id": "04-04-타깃-오디언스-분석과-비주얼-공감-설계",
           "title": "04. 타깃 오디언스 분석과 비주얼 공감 설계",
           "file": "11-ch11-시각적-스토리텔링과-감정-전달/04-04-타깃-오디언스-분석과-비주얼-공감-설계.md",
-          "description": "타깃 오디언스의 심리·문화·세대적 특성 파악. 페르소나 기반 비주얼 전략 수립. 공감을 이끌어내는 이미지 요소(표정, 상황, 문화 코드) 설계"
+          "description": "타깃 오디언스의 심리·문화·세대적 특성 파악. 페르소나 기반 비주얼 전략 수립. 공감을 이끌어내는 이미지 요소(표정, 상황, 문화 코드) 설계",
+          "status": "generated",
+          "key_references": [
+            "https://onlinelibrary.wiley.com/doi/full/10.1111/jade.12558",
+            "https://aijourn.com/ai-powered-visual-storytelling-transforming-content-creation-in-2025/"
+          ]
         },
         {
           "id": "05-05-감정-전달-실전-동일-장면-다른-감정",
           "title": "05. 감정 전달 실전 — 동일 장면, 다른 감정",
           "file": "11-ch11-시각적-스토리텔링과-감정-전달/05-05-감정-전달-실전-동일-장면-다른-감정.md",
-          "description": "실습: 동일한 장면을 기쁨, 슬픔, 긴장, 평온 등 다른 감정으로 재생성. 프롬프트의 어떤 요소가 감정을 바꾸는지 분석. 감정 전달 체크리스트 구축"
+          "description": "실습: 동일한 장면을 기쁨, 슬픔, 긴장, 평온 등 다른 감정으로 재생성. 프롬프트의 어떤 요소가 감정을 바꾸는지 분석. 감정 전달 체크리스트 구축",
+          "status": "generated",
+          "key_references": [
+            "https://www.technology.org/2025/04/01/how-will-ai-dramatically-shape-visual-storytelling/",
+            "https://letsenhance.io/blog/article/ai-text-prompt-guide/",
+            "https://www.superhuman.ai/c/a-complete-guide-to-chatgpt-image-generation-in-2025"
+          ]
         }
       ]
     },
@@ -428,34 +716,59 @@
           "id": "01-01-프로젝트-기획-브리프에서-무드보드까지",
           "title": "01. 프로젝트 기획 — 브리프에서 무드보드까지",
           "file": "12-ch12-실전-포트폴리오-프로젝트/01-01-프로젝트-기획-브리프에서-무드보드까지.md",
-          "description": "실전 프로젝트 브리프 작성법. 타깃 분석 → 콘셉트 도출 → 무드보드 제작 → 스타일 가이드 확정. AI로 무드보드와 콘셉트 보드를 빠르게 생성하는 방법"
+          "description": "실전 프로젝트 브리프 작성법. 타깃 분석 → 콘셉트 도출 → 무드보드 제작 → 스타일 가이드 확정. AI로 무드보드와 콘셉트 보드를 빠르게 생성하는 방법",
+          "status": "generated",
+          "key_references": [
+            "https://aijourn.com/ai-powered-visual-storytelling-transforming-content-creation-in-2025/",
+            "https://www.lovart.ai/blog/ai-character-consistency"
+          ]
         },
         {
           "id": "02-02-브랜드-비주얼-에셋-프로젝트",
           "title": "02. 브랜드 비주얼 에셋 프로젝트",
           "file": "12-ch12-실전-포트폴리오-프로젝트/02-02-브랜드-비주얼-에셋-프로젝트.md",
-          "description": "가상 브랜드의 비주얼 에셋 제작: 로고 콘셉트, 배너, SNS 템플릿, 제품 목업. 일관된 스타일 유지하며 다양한 포맷 생성. sref+cref 활용 전략"
+          "description": "가상 브랜드의 비주얼 에셋 제작: 로고 콘셉트, 배너, SNS 템플릿, 제품 목업. 일관된 스타일 유지하며 다양한 포맷 생성. sref+cref 활용 전략",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference",
+            "https://sref-midjourney.com/cheatsheet",
+            "https://www.lovart.ai/blog/ai-character-consistency"
+          ]
         },
         {
           "id": "03-03-캠페인-비주얼과-영상-콘텐츠-제작",
           "title": "03. 캠페인 비주얼과 영상 콘텐츠 제작",
           "file": "12-ch12-실전-포트폴리오-프로젝트/03-03-캠페인-비주얼과-영상-콘텐츠-제작.md",
-          "description": "마케팅 캠페인용 히어로 이미지 + 숏폼 영상 제작. 이미지 생성 → 리터치 → 영상 변환까지 전체 파이프라인 실행. 채널별(인스타그램, 유튜브 등) 최적화"
+          "description": "마케팅 캠페인용 히어로 이미지 + 숏폼 영상 제작. 이미지 생성 → 리터치 → 영상 변환까지 전체 파이프라인 실행. 채널별(인스타그램, 유튜브 등) 최적화",
+          "status": "generated",
+          "key_references": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+            "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html"
+          ]
         },
         {
           "id": "04-04-ai-비주얼의-저작권윤리상업적-활용",
           "title": "04. AI 비주얼의 저작권·윤리·상업적 활용",
           "file": "12-ch12-실전-포트폴리오-프로젝트/04-04-ai-비주얼의-저작권윤리상업적-활용.md",
-          "description": "AI 생성 이미지의 저작권 현황, 각 플랫폼의 상업적 사용 정책, 학습 데이터 윤리, 딥페이크 리스크. 안전한 상업 활용을 위한 가이드라인"
+          "description": "AI 생성 이미지의 저작권 현황, 각 플랫폼의 상업적 사용 정책, 학습 데이터 윤리, 딥페이크 리스크. 안전한 상업 활용을 위한 가이드라인",
+          "status": "generated",
+          "key_references": [
+            "https://onlinelibrary.wiley.com/doi/full/10.1111/jade.12558",
+            "https://dl.acm.org/doi/10.1145/3689641"
+          ]
         },
         {
           "id": "05-05-포트폴리오-완성과-다음-단계",
           "title": "05. 포트폴리오 완성과 다음 단계",
           "file": "12-ch12-실전-포트폴리오-프로젝트/05-05-포트폴리오-완성과-다음-단계.md",
-          "description": "제작물 최종 정리와 포트폴리오 구성. 프로젝트 케이스 스터디 작성법. AI 비주얼 크리에이터로서의 성장 로드맵, 최신 트렌드 팔로업 방법, 커뮤니티 활용"
+          "description": "제작물 최종 정리와 포트폴리오 구성. 프로젝트 케이스 스터디 작성법. AI 비주얼 크리에이터로서의 성장 로드맵, 최신 트렌드 팔로업 방법, 커뮤니티 활용",
+          "status": "generated",
+          "key_references": [
+            "https://bulkimagegeneration.com/blog/en/tutorials/ai-image-generation-trends-2025-a-new-era-of-creativity",
+            "https://onlinelibrary.wiley.com/doi/full/10.1111/jade.12558"
+          ]
         }
       ]
     }
-  ],
-  "resources": {}
+  ]
 }
